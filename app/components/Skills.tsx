@@ -23,7 +23,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="bg-[#1c1c22] px-40 py-20">
+    <section className="bg-[#1c1c22] px-40 py-20 h-[594px]">
       <h2 className="text-[2vw] font-bold" id="skills">
         Skills/Techniques
       </h2>

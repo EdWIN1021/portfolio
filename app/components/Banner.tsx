@@ -2,10 +2,10 @@
 
 const Banner = () => {
   return (
-    <section className="flex flex-col items-center py-20 px-40 bg-[#161513]">
+    <section className="flex flex-col items-center py-20 px-40 bg-[#161513] h-[594px]">
       <div>
         <img
-          className="h-[250px] w-[200px] rounded-2xl"
+          className="h-[200px] w-[150px] rounded-2xl"
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-3b344.appspot.com/o/32047952-21BC-443C-94A5-393035EEE550_1_105_c.jpeg?alt=media&token=26d32c1d-cef9-4b34-9b97-bb7e4f11b637"
           alt="avatar..."
         />

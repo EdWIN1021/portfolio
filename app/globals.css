@@ -6,3 +6,18 @@ html,
 body {
   color: #fff;
 }
+
+@layer components {
+}
+
+.gradient_text {
+  background-image: linear-gradient(
+    to right,
+    #b16cea,
+    #ff5e69,
+    #ff8a56,
+    #ffa84b
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}

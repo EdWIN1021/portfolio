@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+"use client";
 
 const Banner = () => {
   return (
@@ -13,16 +13,39 @@ const Banner = () => {
 
       <div className="text-center">
         <h1 className="text-[2.5vw] font-bold mt-5">
-          <p className={styles.gradient_text}>Hello, I'm Yang Shi(Edwin),</p>
-          <p>Front-end developer based in Canada.</p>
+          <p className="gradient_text">Hello, I'm Yang Shi(Edwin),</p>
+          <p>Front-end developer</p>
         </h1>
 
-        <p className="mt-5 text-[#f0f2f5] text-sm">
+        <p className="mt-5 text-[#f0f2f5] text-sm max-w-[650px]">
           Dynamic and qualified frontend developer. Adept in Computer Science
           education, project management and programming. Strong analytical
           skills, troubleshooting and problem-solving skills. Exceptional team
           player with superior communication skills.
         </p>
+
+        <div className="flex gap-5 item-center mt-5">
+          <div className="flex item-center gap-3">
+            <img
+              className="w-[20px] h-full"
+              src="/position.png"
+              alt="position..."
+            />
+            <span>Canada</span>
+          </div>
+
+          <div
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/yang-shi-2781b015b/")
+            }
+          >
+            <img
+              className="w-[25px] h-full cursor-pointer"
+              src="/linkedin.png"
+              alt="linkedin..."
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

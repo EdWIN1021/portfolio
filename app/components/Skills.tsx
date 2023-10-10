@@ -1,4 +1,4 @@
-import SkillCard from "../SkillCard/SkillCard";
+import SkillCard from "./SkillCard";
 
 const skills = [
   "javascript",

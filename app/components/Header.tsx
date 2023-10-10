@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-center py-3 px-40 bg-[#161513]">
+    <div className="flex items-center justify-center py-3 px-40 bg-[#161513] fixed w-full">
       <div className="mr-10">
         <Link href={"/"}>
           <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">
@@ -24,8 +24,8 @@ const Header = () => {
           <span>Home</span>
         </Link>
 
-        <Link className="hover:text-[#d9dbdb]" href={"/"}>
-          <span>Services</span>
+        <Link className="hover:text-[#d9dbdb]" href={"#education"}>
+          <span>Education</span>
         </Link>
 
         <Link className="hover:text-[#d9dbdb]" href={"/"}>

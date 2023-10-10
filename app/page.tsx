@@ -1,7 +1,7 @@
-import Banner from "./components/Banner/Banner";
-import Educations from "./components/Eductions/Educations";
-import Header from "./components/Header/Header";
-import Skills from "./components/Skills/Skills";
+import Banner from "./components/Banner";
+import Educations from "./components/Educations";
+import Header from "./components/Header";
+import Skills from "./components/Skills";
 
 export default function Home() {
   return (

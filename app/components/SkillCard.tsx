@@ -1,4 +1,7 @@
-import { SkillCardProps } from "./type";
+interface SkillCardProps {
+  imgUrl: string;
+  title: string;
+}
 
 const SkillCard: React.FC<SkillCardProps> = ({ imgUrl, title }) => {
   return (

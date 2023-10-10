@@ -32,7 +32,7 @@ const Header = () => {
           <span>Experience</span>
         </Link>
 
-        <Link className="hover:text-[#d9dbdb]" href={"/"}>
+        <Link className="hover:text-[#d9dbdb]" href={"#skills"}>
           <span>Skills</span>
         </Link>
 

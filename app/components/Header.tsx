@@ -28,7 +28,7 @@ const Header = () => {
           <span>Education</span>
         </Link>
 
-        <Link className="hover:text-[#d9dbdb]" href={"/"}>
+        <Link className="hover:text-[#d9dbdb]" href={"#experience"}>
           <span>Experience</span>
         </Link>
 
@@ -36,7 +36,7 @@ const Header = () => {
           <span>Skills</span>
         </Link>
 
-        <Link className="hover:text-[#d9dbdb]" href={"/"}>
+        <Link className="hover:text-[#d9dbdb]" href={"#contact"}>
           <span>Contact</span>
         </Link>
       </nav>

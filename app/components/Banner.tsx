@@ -2,7 +2,7 @@
 
 const Banner = () => {
   return (
-    <section className="flex flex-col items-center py-20 px-40 bg-[#161513] h-[594px]">
+    <section className="flex flex-col items-center py-20 px-40 bg-[#161513]">
       <div>
         <img
           className="h-[200px] w-[150px] rounded-2xl"

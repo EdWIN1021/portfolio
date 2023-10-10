@@ -3,7 +3,9 @@ const Contact = () => {
     <section className="bg-[#161513] px-40 py-20">
       <div className="flex mt-10 justify-center gap-2">
         <div className="w-1/2">
-          <h2 className="gradient_text font-bold text-[48px]">Get in touch</h2>
+          <h2 className="gradient_text font-bold text-[48px]" id="contact">
+            Get in touch
+          </h2>
           <p className="mt-10">
             Have a project in mind? Looking to partner or work together? Reach
             out through the form and I'll get back to you in the next 48 hours.

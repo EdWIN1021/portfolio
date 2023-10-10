@@ -23,7 +23,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="bg-[#1c1c22] px-40 py-20 h-[594px]">
+    <section className="bg-[#1c1c22] px-40 py-20">
       <h2 className="text-[2vw] font-bold" id="skills">
         <span className="gradient_text">Skills/Techniques</span>
       </h2>

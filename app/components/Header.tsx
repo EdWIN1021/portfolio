@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-3 w-[80%] m-auto">
+    <div className="flex items-center justify-center p-3">
       <div className="mr-10">
         <Link href={"/"}>
           <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">
@@ -19,7 +19,7 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav className="flex-1 flex gap-5 text-[#f0f2f2] text-sm">
+      <nav className="flex-1 flex gap-5 text-[#f0f2f5] text-sm">
         <Link className="hover:text-[#d9dbdb]" href={"/"}>
           <span>Home</span>
         </Link>
@@ -42,7 +42,7 @@ const Header = () => {
       </nav>
 
       <button
-        className="bg-white hover:bg-[#d9dbdb] text-[#161513] px-5 py-1 font-medium text-base rounded-full"
+        className="bg-white hover:bg-[#d9dbdb] text-[#161513] px-5 py-1 font-medium text-sm rounded-full"
         onClick={downloadCV}
       >
         Download CV
@@ -52,4 +52,3 @@ const Header = () => {
 };
 
 export default Header;
-//https://firebasestorage.googleapis.com/v0/b/portfolio-3b344.appspot.com/o/Yang%20Shi%20Resume.docx?alt=media&token=3c55a47b-a001-446c-8f3a-02d37257305a

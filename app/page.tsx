@@ -1,3 +1,10 @@
+import Header from "./components/Header";
+
 export default function Home() {
-  return <main>start</main>;
+  return (
+    <>
+      <Header />
+      <main></main>
+    </>
+  );
 }

@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col items-center p-20">
+    <section className="flex flex-col items-center py-20 px-40 bg-[#161513]">
       <div>
         <img
           className="h-[250px] w-[200px] rounded-2xl"
@@ -24,7 +24,7 @@ const Banner = () => {
           player with superior communication skills.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

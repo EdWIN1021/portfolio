@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-3">
+    <div className="flex items-center justify-center py-3 px-40 bg-[#161513]">
       <div className="mr-10">
         <Link href={"/"}>
           <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">
@@ -42,7 +42,7 @@ const Header = () => {
       </nav>
 
       <button
-        className="bg-white hover:bg-[#d9dbdb] text-[#161513] px-5 py-1 font-medium text-sm rounded-full"
+        className="bg-white hover:bg-[#d9dbdb] text-[#161513] px-5 py-1 font-medium text-sm rounded-full whitespace-nowrap "
         onClick={downloadCV}
       >
         Download CV

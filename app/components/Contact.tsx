@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <section className="bg-[#161513] px-40 py-20 h-[594px]">
-      <div className="flex mt-10">
+    <section className="bg-[#161513] px-40 py-20">
+      <div className="flex mt-10 justify-center gap-2">
         <div className="w-1/2">
           <h2 className="gradient_text font-bold text-[48px]">Get in touch</h2>
           <p className="mt-10">
@@ -28,34 +28,54 @@ const Contact = () => {
           </div>
         </div>
         <form>
-          <div>
-            <label className="block" htmlFor="name">
+          <div className="mb-5">
+            <label className="block mb-2" htmlFor="name">
               Your Name
             </label>
-            <input type="text" id="name" placeholder="Enter your name" />
+            <input
+              className="w-full bg-[#1c1c22] p-2 outline-none"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+            />
           </div>
 
-          <div>
-            <label className="block" htmlFor="email">
+          <div className="mb-5">
+            <label className="block mb-2" htmlFor="email">
               Your Email
             </label>
-            <input type="email" id="email" placeholder="Enter your email" />
+            <input
+              className="w-full bg-[#1c1c22] p-2 outline-none"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+            />
           </div>
 
-          <div>
-            <label className="block" htmlFor="info">
+          <div className="mb-5">
+            <label className="block mb-2" htmlFor="info">
               Tell me a bit more what you are looking for?
             </label>
-            <textarea id="info" />
+            <textarea
+              className="w-full bg-[#1c1c22] p-2 outline-none"
+              id="info"
+            />
           </div>
 
-          <button>SUBMIT NOW</button>
+          <button
+            className="px-4 py-2 rounded-full"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, #b16cea, #ff5e69, #ff8a56, #ffa84b)",
+            }}
+          >
+            SUBMIT NOW
+          </button>
         </form>
       </div>
 
-      <div className="h-[2px] w-full bg-white mt-[100px]"></div>
-
-      <p className="mt-8">© Design by Edwin</p>
+      <div className="h-[2px] w-full bg-white mt-[80px]"></div>
+      <p className="mt-2">© Design by Edwin</p>
     </section>
   );
 };

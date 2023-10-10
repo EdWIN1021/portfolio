@@ -13,7 +13,7 @@ const Banner = () => {
 
       <div className="text-center">
         <h1 className="text-[2.5vw] font-bold mt-5">
-          <p className="gradient_text">Hello, I'm Yang Shi(Edwin),</p>
+          <p className="gradient_text">Hello, I'm Yang Shi (Edwin),</p>
           <p>Front-end developer</p>
         </h1>
 

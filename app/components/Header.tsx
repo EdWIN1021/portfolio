@@ -1,12 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   const downloadCV = () => {
     window.open(
       "https://firebasestorage.googleapis.com/v0/b/portfolio-3b344.appspot.com/o/Yang%20Shi%20Resume.docx?alt=media&token=3c55a47b-a001-446c-8f3a-02d37257305a"
     );
+  };
+
+  const toggleMenu = () => {
+    setShowMenu((pre) => !pre);
   };
 
   return (
@@ -55,14 +62,54 @@ const Header = () => {
           className="w-[30px] h-[30px] border-2 cursor-pointer rounded"
           src="/bar.png"
           alt="bar..."
+          onClick={toggleMenu}
         />
 
         <Link className="flex-1" href={"/"}>
-          <span className="font-bold text-[32px] tracking-widest whitespace-nowrap w-full inline-block text-center">
+          <span className="font-bold text-[24px] tracking-widest whitespace-nowrap w-full inline-block text-center">
             {"<YS />"}
           </span>
         </Link>
       </div>
+
+      {showMenu && (
+        <nav className="text-[#f0f2f5] text-[16px] bg-[#1c1c22] p-2 md:hidden">
+          <Link
+            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            href={"/"}
+          >
+            <span>Home</span>
+          </Link>
+
+          <Link
+            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            href={"#education"}
+          >
+            <span>Education</span>
+          </Link>
+
+          <Link
+            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            href={"#experience"}
+          >
+            <span>Experience</span>
+          </Link>
+
+          <Link
+            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            href={"#skills"}
+          >
+            <span>Skills</span>
+          </Link>
+
+          <Link
+            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            href={"#contact"}
+          >
+            <span>Contact</span>
+          </Link>
+        </nav>
+      )}
     </div>
   );
 };

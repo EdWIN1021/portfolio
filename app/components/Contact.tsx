@@ -2,19 +2,31 @@
 
 import Container from "../ui/Container";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [fields, setFields] = useState({ name: "", email: "", info: "" });
 
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    const res = await fetch("api/send_email", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(fields),
-    });
+
+    try {
+      const res = await fetch("api/send_email", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(fields),
+      });
+
+      if (res.ok) {
+        toast.success("i have gotten your email");
+      }
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setFields({ ...fields, name: "", email: "", info: "" });
+    }
   };
 
   const handleChange = (

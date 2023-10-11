@@ -11,7 +11,7 @@ const Contact = () => {
     <Container bgColor={"#161513"}>
       <div className="md:flex md:justify-between mt-10">
         <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="gradient_text font-bold text-[48px]" id="contact">
+          <h2 className="gradient_text font-bold text-[32px]" id="contact">
             Get in touch
           </h2>
           <p className="mt-10">

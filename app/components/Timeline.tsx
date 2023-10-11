@@ -90,8 +90,8 @@ const experience = [
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col relative items-center mt-10">
-      <div className="w-[3px] h-full bg-white absolute"></div>
+    <div className="md:flex flex-col relative items-center mt-10">
+      <div className="hidden lg:block w-[3px] h-full bg-white absolute"></div>
       {experience.map((item, index) => (
         <TimelineCard
           position={index % 2 === 0 ? "self-start" : "self-end"}

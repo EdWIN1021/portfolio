@@ -11,10 +11,10 @@ const Header = () => {
 
   return (
     <div className="w-full bg-[#161513]">
-      <div className="flex items-center justify-center py-4 max-w-5xl mx-auto">
+      <div className="hidden md:flex items-center justify-center p-5 max-w-5xl mx-auto">
         <div className="mr-10">
           <Link href={"/"}>
-            <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">
+            <span className="font-bold text-xl tracking-widest whitespace-nowrap">
               {"<YS />"}
             </span>
           </Link>
@@ -48,6 +48,20 @@ const Header = () => {
         >
           Download CV
         </button>
+      </div>
+
+      <div className="flex items-center p-5 md:hidden">
+        <img
+          className="w-[30px] h-[30px] border-2 cursor-pointer rounded"
+          src="/bar.png"
+          alt="bar..."
+        />
+
+        <Link className="flex-1" href={"/"}>
+          <span className="font-bold text-[32px] tracking-widest whitespace-nowrap w-full inline-block text-center">
+            {"<YS />"}
+          </span>
+        </Link>
       </div>
     </div>
   );

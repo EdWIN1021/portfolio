@@ -8,11 +8,12 @@ import Skills from "./components/Skills";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
-        <Banner />
+        {/* <Banner />
         <Skills />
         <Experience />
+        */}
         <Educations />
         <Contact />
       </main>

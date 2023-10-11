@@ -1,8 +1,16 @@
+"use client";
+
+import Container from "../ui/Container";
+
 const Contact = () => {
+  const handleSubmit = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+  };
+
   return (
-    <section className="bg-[#161513] px-40 py-20">
-      <div className="flex mt-10 justify-center gap-2">
-        <div className="w-1/2">
+    <Container bgColor={"#161513"}>
+      <div className="md:flex md:justify-center md:gap-8  mt-10">
+        <div className="md:w-1/2 text-center md:text-left">
           <h2 className="gradient_text font-bold text-[48px]" id="contact">
             Get in touch
           </h2>
@@ -11,7 +19,7 @@ const Contact = () => {
             out through the form and I'll get back to you in the next 48 hours.
           </p>
 
-          <div className="flex gap-2 mt-10 mb-5">
+          <div className="flex gap-2 mt-10 mb-5 justify-center md:justify-start">
             <img
               src="/email.png"
               alt="email..."
@@ -20,7 +28,7 @@ const Contact = () => {
             <p>edwinshi.work@gmail.com</p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 justify-center md:justify-start">
             <img
               src="/phone.png"
               alt="phone..."
@@ -29,7 +37,7 @@ const Contact = () => {
             <p>778-898-3668</p>
           </div>
         </div>
-        <form>
+        <form onSubmit={handleSubmit} className="mt-8 md:mt-0">
           <div className="mb-5">
             <label className="block mb-2" htmlFor="name">
               Your Name
@@ -39,6 +47,7 @@ const Contact = () => {
               type="text"
               id="name"
               placeholder="Enter your name"
+              required
             />
           </div>
 
@@ -51,6 +60,7 @@ const Contact = () => {
               type="email"
               id="email"
               placeholder="Enter your email"
+              required
             />
           </div>
 
@@ -61,11 +71,12 @@ const Contact = () => {
             <textarea
               className="w-full bg-[#1c1c22] p-2 outline-none"
               id="info"
+              required
             />
           </div>
 
           <button
-            className="px-4 py-2 rounded-full"
+            className="px-4 py-2 rounded-full w-full"
             style={{
               backgroundImage:
                 "linear-gradient(to right, #b16cea, #ff5e69, #ff8a56, #ffa84b)",
@@ -78,7 +89,7 @@ const Contact = () => {
 
       <div className="h-[2px] w-full bg-white mt-[80px]"></div>
       <p className="mt-2">© Design by Edwin</p>
-    </section>
+    </Container>
   );
 };
 

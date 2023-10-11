@@ -68,6 +68,24 @@ const experience = [
       { name: "antd", color: "#b16cea" },
     ],
   },
+  {
+    company: "Ontario Lottery and Gaming Corporation (coop)",
+    title: "Program Analyst",
+    duration: "2018/05–2019/04",
+    details: [
+      "Designed database with MySQL for CRUD operations.",
+      "Implemented OLG’s intranet web pages with HTML, CSS and bootstrap.",
+      "Utilized JavaScript to create dynamic graphs for presentations",
+      "Initiated a barcode security project with C#..",
+    ],
+    skills: [
+      { name: "php", color: "#b16cea" },
+      { name: "javascript", color: "#ffa84b" },
+      { name: "html", color: "#ff5e69" },
+      { name: "css", color: "#ff8a56" },
+      { name: "c#", color: "#b16cea" },
+    ],
+  },
 ];
 
 const Timeline = () => {

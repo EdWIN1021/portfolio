@@ -21,7 +21,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   skills,
 }) => {
   return (
-    <div className={`relative ${position}`}>
+    <div className={`${position}`}>
       <div className="w-[450px] p-6 bg-[#1c1c22] ">
         <h3>{company}</h3>
 

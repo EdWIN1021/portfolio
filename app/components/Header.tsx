@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-center py-3 px-40 bg-[#161513] fixed w-full">
+    <div className="flex items-center justify-center py-3 px-40 bg-[#161513] w-full">
       <div className="mr-10">
         <Link href={"/"}>
           <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">

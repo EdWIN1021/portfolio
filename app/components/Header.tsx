@@ -10,43 +10,45 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center justify-center py-3 px-40 bg-[#161513] w-full">
-      <div className="mr-10">
-        <Link href={"/"}>
-          <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">
-            {"<YS />"}
-          </span>
-        </Link>
+    <div className="w-full bg-[#161513]">
+      <div className="flex items-center justify-center py-4 max-w-5xl mx-auto">
+        <div className="mr-10">
+          <Link href={"/"}>
+            <span className="font-bold text-xl tracking-widest whitespace-nowrap  ">
+              {"<YS />"}
+            </span>
+          </Link>
+        </div>
+
+        <nav className="flex-1 flex gap-5 text-[#f0f2f5] text-sm">
+          <Link className="hover:text-[#d9dbdb]" href={"/"}>
+            <span>Home</span>
+          </Link>
+
+          <Link className="hover:text-[#d9dbdb]" href={"#education"}>
+            <span>Education</span>
+          </Link>
+
+          <Link className="hover:text-[#d9dbdb]" href={"#experience"}>
+            <span>Experience</span>
+          </Link>
+
+          <Link className="hover:text-[#d9dbdb]" href={"#skills"}>
+            <span>Skills</span>
+          </Link>
+
+          <Link className="hover:text-[#d9dbdb]" href={"#contact"}>
+            <span>Contact</span>
+          </Link>
+        </nav>
+
+        <button
+          className="bg-white hover:bg-[#d9dbdb] text-[#161513] px-5 py-1 font-medium text-sm rounded-full whitespace-nowrap "
+          onClick={downloadCV}
+        >
+          Download CV
+        </button>
       </div>
-
-      <nav className="flex-1 flex gap-5 text-[#f0f2f5] text-sm">
-        <Link className="hover:text-[#d9dbdb]" href={"/"}>
-          <span>Home</span>
-        </Link>
-
-        <Link className="hover:text-[#d9dbdb]" href={"#education"}>
-          <span>Education</span>
-        </Link>
-
-        <Link className="hover:text-[#d9dbdb]" href={"#experience"}>
-          <span>Experience</span>
-        </Link>
-
-        <Link className="hover:text-[#d9dbdb]" href={"#skills"}>
-          <span>Skills</span>
-        </Link>
-
-        <Link className="hover:text-[#d9dbdb]" href={"#contact"}>
-          <span>Contact</span>
-        </Link>
-      </nav>
-
-      <button
-        className="bg-white hover:bg-[#d9dbdb] text-[#161513] px-5 py-1 font-medium text-sm rounded-full whitespace-nowrap "
-        onClick={downloadCV}
-      >
-        Download CV
-      </button>
     </div>
   );
 };

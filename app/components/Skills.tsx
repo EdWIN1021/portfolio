@@ -1,4 +1,5 @@
 import SkillCard from "./SkillCard";
+import Container from "../ui/Container";
 
 const skills = [
   "javascript",
@@ -23,19 +24,20 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="bg-[#1c1c22]">
-      <div className="mx-auto p-20 w-[1080px]">
-        <h2 className="text-[2vw] font-bold" id="skills">
-          <span className="gradient_text">Skills/Techniques</span>
-        </h2>
+    <Container bgColor="#1c1c22">
+      <h2
+        className="text-[32px] font-bold text-center md:text-left"
+        id="skills"
+      >
+        <span className="gradient_text">Skills/Techniques</span>
+      </h2>
 
-        <div className="grid grid-cols-6 gap-y-8 mt-10">
-          {skills.map((skill) => (
-            <SkillCard key={skill} imgUrl={`/${skill}.png`} title={skill} />
-          ))}
-        </div>
+      <div className="grid md:grid-cols-6  grid-cols-4 gap-y-8 mt-10">
+        {skills.map((skill) => (
+          <SkillCard key={skill} imgUrl={`/${skill}.png`} title={skill} />
+        ))}
       </div>
-    </section>
+    </Container>
   );
 };
 

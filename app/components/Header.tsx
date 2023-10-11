@@ -108,6 +108,13 @@ const Header = () => {
           >
             <span>Contact</span>
           </Link>
+
+          <div
+            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            onClick={downloadCV}
+          >
+            <span>Download CV</span>
+          </div>
         </nav>
       )}
     </div>

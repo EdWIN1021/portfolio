@@ -1,10 +1,26 @@
 "use client";
 
 import Container from "../ui/Container";
+import { useState } from "react";
 
 const Contact = () => {
-  const handleSubmit = (e: React.SyntheticEvent) => {
+  const [fields, setFields] = useState({ name: "", email: "", info: "" });
+
+  const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
+    const res = await fetch("api/send_email", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(fields),
+    });
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFields({ ...fields, [e.target.name]: e.target.value });
   };
 
   return (
@@ -46,7 +62,10 @@ const Contact = () => {
               className="w-full bg-[#1c1c22] p-2 outline-none"
               type="text"
               id="name"
+              name="name"
+              value={fields.name}
               placeholder="Enter your name"
+              onChange={handleChange}
               required
             />
           </div>
@@ -59,7 +78,10 @@ const Contact = () => {
               className="w-full bg-[#1c1c22] p-2 outline-none"
               type="email"
               id="email"
+              name="email"
+              value={fields.email}
               placeholder="Enter your email"
+              onChange={handleChange}
               required
             />
           </div>
@@ -71,6 +93,9 @@ const Contact = () => {
             <textarea
               className="w-full bg-[#1c1c22] p-2 outline-none"
               id="info"
+              name="info"
+              value={fields.info}
+              onChange={handleChange}
               required
             />
           </div>

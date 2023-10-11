@@ -1,15 +1,11 @@
 import EducationCard from "./EducationCard";
-import Container from "../ui/Container";
+import Container from "../../ui/Container";
+import Heading from "../../ui/Heading";
 
 const Educations = () => {
   return (
     <Container bgColor="#1c1c22">
-      <h2
-        className="text-[32px] font-bold text-center md:text-left"
-        id="education"
-      >
-        <span className="gradient_text">Education</span>
-      </h2>
+      <Heading title={"Education"} />
 
       <div className=" h-full text-center items-center flex flex-col md:flex-row md:justify-between md:items-center md:text-left">
         <EducationCard />

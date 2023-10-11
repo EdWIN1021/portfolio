@@ -1,6 +1,5 @@
-"use client";
-
-import Container from "../ui/Container";
+import Container from "../../ui/Container";
+import IconButton from "../../ui/IconButton";
 
 const Banner = () => {
   return (
@@ -34,17 +33,10 @@ const Banner = () => {
             <span>Canada</span>
           </div>
 
-          <div
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/yang-shi-2781b015b/")
-            }
-          >
-            <img
-              className="w-[25px] h-full cursor-pointer"
-              src="/linkedin.png"
-              alt="linkedin..."
-            />
-          </div>
+          <IconButton
+            url={"https://www.linkedin.com/in/yang-shi-2781b015b/"}
+            title={"linkedin"}
+          />
         </div>
       </div>
     </Container>

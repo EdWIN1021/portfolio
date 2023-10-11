@@ -1,16 +1,4 @@
-interface TimelineCardProps {
-  position: string;
-  company: string;
-  title: string;
-  duration: string;
-  details: string[];
-  skills: Skill[];
-}
-
-interface Skill {
-  name: string;
-  color: string;
-}
+import TimelineCardProps from "./type";
 
 const TimelineCard: React.FC<TimelineCardProps> = ({
   position,

@@ -8,7 +8,7 @@ const Container = ({
   children: ReactNode;
 }) => {
   return (
-    <section className="p-20" style={{ backgroundColor: bgColor }}>
+    <section className="p-5 md:p-20" style={{ backgroundColor: bgColor }}>
       <div className="max-w-5xl mx-auto">{children}</div>
     </section>
   );

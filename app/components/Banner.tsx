@@ -24,7 +24,7 @@ const Banner = () => {
           player with superior communication skills.
         </p>
 
-        <div className="flex gap-5 item-center mt-8">
+        <div className="flex gap-5 item-center mt-8 justify-center md:justify-start">
           <div className="flex item-center gap-3">
             <img
               className="w-[20px] h-full"

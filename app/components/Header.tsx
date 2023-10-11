@@ -110,7 +110,7 @@ const Header = () => {
           </Link>
 
           <div
-            className="hover:bg-[#b0b0b0] block text-center mt-2"
+            className="hover:bg-[#b0b0b0] block text-center mt-2 cursor-pointer"
             onClick={downloadCV}
           >
             <span>Download CV</span>

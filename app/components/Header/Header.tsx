@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,6 +15,21 @@ const Header = () => {
   const toggleMenu = () => {
     setShowMenu((pre) => !pre);
   };
+
+  const sendTracker = async () => {
+    try {
+      await fetch("api/track", {
+        method: "POST",
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    // sendTracker();
+    console.log("a");
+  }, []);
 
   return (
     <div className="w-full bg-[#161513]">

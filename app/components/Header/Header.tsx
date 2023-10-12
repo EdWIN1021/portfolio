@@ -27,8 +27,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    // sendTracker();
-    console.log("a");
+    sendTracker();
   }, []);
 
   return (

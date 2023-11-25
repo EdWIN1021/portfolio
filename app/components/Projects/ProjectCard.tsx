@@ -11,7 +11,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<{ project: ProjectCardProps }> = ({ project }) => {
   return (
     <div
-      className={`flex py-10 min-h-[350px] items-center bg-[#161513] p-10 my-4 ${
+      className={`md:flex py-10 min-h-[350px] items-center bg-[#161513] p-10 my-4 ${
         project.id % 2 > 0 && "flex-row-reverse"
       } `}
     >

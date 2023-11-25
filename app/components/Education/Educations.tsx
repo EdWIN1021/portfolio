@@ -4,7 +4,7 @@ import Heading from "../../ui/Heading";
 
 const Educations = () => {
   return (
-    <Container bgColor="#1c1c22">
+    <Container bgColor="#161513">
       <Heading title={"Education"} />
 
       <div className=" h-full text-center items-center flex flex-col md:flex-row md:justify-between md:items-center md:text-left">

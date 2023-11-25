@@ -41,7 +41,7 @@ const ContactForm = () => {
           Your Name
         </label>
         <input
-          className="w-full bg-[#1c1c22] p-2 outline-none"
+          className="w-full bg-[#161513] p-2 outline-none"
           type="text"
           id="name"
           name="name"
@@ -57,7 +57,7 @@ const ContactForm = () => {
           Your Email
         </label>
         <input
-          className="w-full bg-[#1c1c22] p-2 outline-none"
+          className="w-full bg-[#161513] p-2 outline-none"
           type="email"
           id="email"
           name="email"
@@ -73,7 +73,7 @@ const ContactForm = () => {
           Tell me a bit more what you are looking for?
         </label>
         <textarea
-          className="w-full bg-[#1c1c22] p-2 outline-none"
+          className="w-full bg-[#161513] p-2 outline-none"
           id="info"
           name="info"
           value={fields.info}

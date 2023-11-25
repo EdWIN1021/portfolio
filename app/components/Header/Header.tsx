@@ -16,19 +16,19 @@ const Header = () => {
     setShowMenu((pre) => !pre);
   };
 
-  const sendTracker = async () => {
-    try {
-      await fetch("api/track", {
-        method: "POST",
-      });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  // const sendTracker = async () => {
+  //   try {
+  //     await fetch("api/track", {
+  //       method: "POST",
+  //     });
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
-  useEffect(() => {
-    sendTracker();
-  }, []);
+  // useEffect(() => {
+  //   sendTracker();
+  // }, []);
 
   return (
     <div className="w-full bg-[#161513]">

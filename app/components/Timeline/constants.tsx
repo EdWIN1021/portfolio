@@ -1,7 +1,7 @@
 export const experience = [
   {
     company: "Poros Career (Internship)",
-    title: "Frontend Developer",
+    title: "Software Engineer",
     duration: "2023/05–2023/07",
     details: [
       "Implemented a library management system with React and NextJs.",
@@ -18,7 +18,7 @@ export const experience = [
   },
   {
     company: "Yun Shang Gong-Land United Technology (Full-time)",
-    title: "Frontend Developer",
+    title: "Software Engineer",
     duration: "2022/11–2023/04",
     details: [
       "Utilized Taro and React to implement wechat applet tax trail, help center and contract template.",
@@ -35,8 +35,8 @@ export const experience = [
   {
     company:
       "Tianjin Standard Chartered Global Business Services Co., Ltd (Full-time)",
-    title: "Frontend Developer",
-    duration: "2021/08–2022/04",
+    title: "Software Engineer",
+    duration: "2021/09–2022/09",
     details: [
       "Utilized Ember to create electronic checks for payment requests to designated institutions.",
       "Facilitated user-initiated payment requests using designated accounts.",
@@ -52,8 +52,8 @@ export const experience = [
   },
   {
     company: "Tianjin Jili Technology Co., Ltd (Full-time)",
-    title: "Frontend Developer",
-    duration: "2021/03–2022/07",
+    title: "Software Engineer",
+    duration: "2021/03–2022/08",
     details: [
       "Utilized React and Antd to reconstruct the entrance record of the laboratory.",
       "Designed the api interface of data with Koa, mariaDB and segregate",

@@ -6,21 +6,21 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     id: 1,
-    title: "Twitter Clone",
-    link: "https://twitter-x-clone-mauve.vercel.app/",
-    imgUrl: "/twitter-preview.png",
-  },
-  {
-    id: 2,
     title: "Netflix Clone",
     link: "https://temp-blue-seven.vercel.app/",
     imgUrl: "/netflix-preview.png",
   },
   {
-    id: 3,
+    id: 2,
     title: "Library Management System",
     link: "https://library-management-system-teal.vercel.app/",
     imgUrl: "/lms-preview.png",
+  },
+  {
+    id: 3,
+    title: "Twitter Clone",
+    link: "https://twitter-x-clone-kohl.vercel.app/",
+    imgUrl: "/twitter-preview.png",
   },
 ];
 

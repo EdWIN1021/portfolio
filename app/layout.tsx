@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import { Kanit } from "next/font/google";
+import "react-vertical-timeline-component/style.min.css";
 
 const kanit = Kanit({
   subsets: ["latin", "latin-ext", "thai", "vietnamese"],

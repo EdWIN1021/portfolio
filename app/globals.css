@@ -10,6 +10,10 @@ body {
 @layer components {
 }
 
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+}
+
 .gradient_text {
   background-image: linear-gradient(
     to right,

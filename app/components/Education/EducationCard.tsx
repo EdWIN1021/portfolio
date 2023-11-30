@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const EducationCard = () => {
   return (
     <div>
@@ -7,11 +9,7 @@ const EducationCard = () => {
       <p>2015 - 2019</p>
 
       <div className="flex item-center gap-3 mt-8 justify-center md:justify-start">
-        <img
-          className="w-[20px] h-full"
-          src="/position.png"
-          alt="position..."
-        />
+        <Image src="/position.png" alt="position..." width={20} height={20} />
         <span>Sault Ste. Marie, Canada</span>
       </div>
     </div>

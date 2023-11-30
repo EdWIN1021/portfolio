@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -76,10 +77,12 @@ const Header = () => {
       </div>
 
       <div className="flex items-center p-5 md:hidden">
-        <img
-          className="w-[30px] h-[30px] border-2 cursor-pointer rounded"
+        <Image
+          className="border-2 cursor-pointer rounded"
           src="/bar.png"
           alt="bar..."
+          height={30}
+          width={30}
           onClick={toggleMenu}
         />
 

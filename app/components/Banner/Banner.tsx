@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from "../../ui/Container";
 import IconButton from "../../ui/IconButton";
+import Image from "next/image";
 
 const Banner = () => {
   const [title, setTitle] = useState("");
@@ -33,10 +34,12 @@ const Banner = () => {
 
   return (
     <Container bgColor="#161513">
-      <img
-        className="h-[200px] w-[150px] rounded-2xl mx-auto"
+      <Image
+        className="rounded-2xl mx-auto"
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-3b344.appspot.com/o/32047952-21BC-443C-94A5-393035EEE550_1_105_c.jpeg?alt=media&token=26d32c1d-cef9-4b34-9b97-bb7e4f11b637"
         alt="avatar..."
+        width={150}
+        height={200}
       />
 
       <div className="text-center">
@@ -54,10 +57,11 @@ const Banner = () => {
 
         <div className="flex gap-5 item-center mt-8 justify-center md:justify-start">
           <div className="flex item-center gap-3">
-            <img
-              className="w-[20px] h-full"
+            <Image
               src="/position.png"
               alt="position..."
+              width={20}
+              height={20}
             />
             <span>Canada</span>
           </div>

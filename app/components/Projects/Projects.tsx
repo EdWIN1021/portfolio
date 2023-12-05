@@ -22,6 +22,12 @@ const projects = [
     link: "https://twitter-x-clone-kohl.vercel.app/",
     imgUrl: "/twitter-preview.png",
   },
+  {
+    id: 4,
+    title: "Airbnb Clone",
+    link: "https://air-clone-edwin1021.vercel.app/",
+    imgUrl: "/airbnb-preview.png",
+  },
 ];
 
 const Projects = () => {

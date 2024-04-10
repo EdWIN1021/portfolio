@@ -1,10 +1,19 @@
+import Banner from "./components/Banner";
 import Header from "./components/Header";
 
 function App() {
   return (
-    <div>
+    <main>
       <Header />
-    </div>
+      <Banner />
+
+      {/*
+      <Skills />
+      <Experience />
+      <Projects />
+      <Educations />
+      <Contact /> */}
+    </main>
   );
 }
 

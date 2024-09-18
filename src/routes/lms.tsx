@@ -30,7 +30,7 @@ const LMS = () => {
               Home Page
             </h2>
 
-            <img src="../lms/home.png" alt="home" width={800} height={450} />
+            <img src="lms/home.png" alt="home" width={800} height={450} />
           </div>
 
           <div>
@@ -45,7 +45,7 @@ const LMS = () => {
               account.
             </p>
             <img
-              src="../lms/signup.png"
+              src="lms/signup.png"
               alt="signup"
               width={800} // The original image width
               height={450} // Adjust height to maintain the aspect ratio
@@ -65,7 +65,7 @@ const LMS = () => {
               Users can use email or login with their Gmail or GitHub account.
             </p>
             <img
-              src="../lms/login.png"
+              src="lms/login.png"
               className="h-auto w-auto"
               alt="login"
               width={800}
@@ -86,7 +86,7 @@ const LMS = () => {
             </p>
 
             <img
-              src="/lms/book-detail.png"
+              src="lms/book-detail.png"
               alt="book-detail"
               width={800}
               height={450}
@@ -103,7 +103,7 @@ const LMS = () => {
             <p className="my-5">Display list of books.</p>
 
             <img
-              src="../lms/book-list.png"
+              src="lms/book-list.png"
               alt="book-list"
               width={800}
               height={450}
@@ -121,7 +121,7 @@ const LMS = () => {
               Display a list of books that the user has borrowed.
             </p>
 
-            <img src="../lms/shelf.png" alt="shelf" width={800} height={450} />
+            <img src="lms/shelf.png" alt="shelf" width={800} height={450} />
           </div>
 
           <div>
@@ -132,7 +132,7 @@ const LMS = () => {
               The user needs to input the OTP that the system sent to their
               email&quot;.
             </p>
-            <img src="../lms/otp.png" alt="otp" width={800} height={450} />
+            <img src="lms/otp.png" alt="otp" width={800} height={450} />
           </div>
 
           <div>
@@ -147,7 +147,7 @@ const LMS = () => {
               reset their password.
             </p>
             <img
-              src="/lms/reset-password.png"
+              src="lms/reset-password.png"
               alt="reset-password"
               width={800}
               height={450}
@@ -164,7 +164,7 @@ const LMS = () => {
             <p className="my-5">Display the user&apos;s settings.</p>
 
             <img
-              src="../lms/settings.png"
+              src="lms/settings.png"
               alt="settings"
               width={800}
               height={450}
@@ -182,12 +182,7 @@ const LMS = () => {
               The user makes a payment to cover the late fee.
             </p>
 
-            <img
-              src="../lms/payment.png"
-              alt="payment"
-              width={800}
-              height={450}
-            />
+            <img src="lms/payment.png" alt="payment" width={800} height={450} />
           </div>
         </div>
       </div>

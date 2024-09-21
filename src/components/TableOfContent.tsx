@@ -4,20 +4,10 @@ import { Button } from "./ui/button";
 import { scroller } from "react-scroll";
 
 interface TableOfContentProps {
-  details: {
-    id: number;
-    title: string;
-    description: string;
-    imgSrc: string;
-  }[];
+  details: Detail[];
 }
 
 const TableOfContent: React.FC<TableOfContentProps> = ({ details }) => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <div className="fixed hidden xl:block">
       <div className="flex flex-col">

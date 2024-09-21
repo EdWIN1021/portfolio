@@ -1,18 +1,6 @@
+import ProjectDetail from "@/components/ProjectDetail";
 import SampleBreadcrumb from "@/components/SampleBreadcrumb";
 import TableOfContent from "@/components/TableOfContent";
-
-const titles = [
-  "Home Page",
-  "Signup",
-  "Login",
-  "Book Detail",
-  "Book List",
-  "Book Shelf",
-  "OTP",
-  "Reset Password",
-  "Settings",
-  "Payment",
-];
 
 const details = [
   {
@@ -92,19 +80,7 @@ const LibraryManagementSystem = () => {
 
         <div className="flex flex-col items-center gap-20 mt-10">
           {details?.map((detail) => (
-            <div key={detail?.title}>
-              <h2 className="font-semibold text-2xl" id={detail?.title}>
-                {detail.title}
-              </h2>
-              <p className="my-5">{detail?.description}</p>
-
-              <img
-                src={detail?.imgSrc}
-                alt={detail.title}
-                width={800}
-                height={450}
-              />
-            </div>
+            <ProjectDetail key={detail?.title} detail={detail} />
           ))}
         </div>
       </div>

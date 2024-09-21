@@ -65,6 +65,7 @@ const WorkSamples = () => {
       <VerticalTimeline>
         {projects.map((project) => (
           <VerticalTimelineElement
+            key={project?.title}
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#1c1c22", color: "#fff" }}
             contentArrowStyle={{

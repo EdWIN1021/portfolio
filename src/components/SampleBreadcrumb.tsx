@@ -23,7 +23,6 @@ const SampleBreadcrumb = () => {
 
   const formatPathname = () => {
     const lastRouteName = pathName.split("/")[pathName.split("/").length - 1];
-    console.log(lastRouteName);
 
     return lastRouteName
       .split("-")
@@ -33,8 +32,6 @@ const SampleBreadcrumb = () => {
       )
       .join(" ");
   };
-
-  console.log(formatPathname());
 
   return (
     <div className="flex flex-col items-center">

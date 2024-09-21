@@ -9,11 +9,14 @@ import SkillsPage from "./routes/skills";
 import EducationsPage from "./routes/educations";
 import ContactPage from "./routes/contact";
 import HomePage from "./routes/home";
-import LMS from "./routes/lms";
+import LMS from "./routes/library-management-system";
 import { ThemeProvider } from "@/components/theme-provider";
 import WorkSamplesLayout from "./layouts/WorkSamplesLayout";
 import RootLayout from "@/layouts/RootLayout";
 import TwitterClone from "./routes/twitter-clone";
+import RealTimeChatApplication from "./routes/real-time-chat-application";
+import ShadowKnight from "./routes/shadow-knight";
+import LegendOfWukong from "./routes/legend-of-wukong";
 
 const router = createHashRouter([
   {
@@ -43,6 +46,18 @@ const router = createHashRouter([
           {
             path: "twitter-clone/",
             element: <TwitterClone />,
+          },
+          {
+            path: "real-time-chat-application/",
+            element: <RealTimeChatApplication />,
+          },
+          {
+            path: "shadow-knight/",
+            element: <ShadowKnight />,
+          },
+          {
+            path: "legend-of-wukong/",
+            element: <LegendOfWukong />,
           },
         ],
       },

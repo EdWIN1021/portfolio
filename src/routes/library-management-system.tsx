@@ -14,7 +14,7 @@ const titles = [
   "Payment",
 ];
 
-const LMS = () => {
+const LibraryManagementSystem = () => {
   return (
     <>
       <TableOfContent titles={titles} />
@@ -190,4 +190,4 @@ const LMS = () => {
   );
 };
 
-export default LMS;
+export default LibraryManagementSystem;

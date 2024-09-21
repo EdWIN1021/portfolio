@@ -21,7 +21,7 @@ const Drawer: React.FC<DrawerProps> = ({ links, formatLink }) => {
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline">
-            <img className="h-full w-full" src="bar.png" alt="bar" />
+            <img className="w-5 h-5" src="bar.png" alt="bar" />
           </Button>
         </SheetTrigger>
 

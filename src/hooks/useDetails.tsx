@@ -224,7 +224,7 @@ const data = [
         id: 1,
         title: "Lock on",
         description: "",
-        imgSrc: "low/boss.png",
+        imgSrc: "low/lock-on.png",
       },
       {
         id: 2,
@@ -240,6 +240,12 @@ const data = [
           "Enemies will patrol between the two target points and attack the player when they get close.",
         imgSrc: "low/ai.png",
       },
+      {
+        id: 4,
+        title: "Boss fight",
+        description: "",
+        imgSrc: "low/boss.png",
+      },
     ],
   },
 ];
@@ -252,5 +258,3 @@ export const useDetails = (projectId: string) => {
 
   return { details };
 };
-
-

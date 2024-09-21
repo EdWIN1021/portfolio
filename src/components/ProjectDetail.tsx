@@ -22,7 +22,7 @@ const ProjectDetail: React.FC<DetailProps> = ({ detail }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            title={`Video: ${detail.title}`} // Added title for accessibility
+            title={`Video: ${detail.title}`}
           ></iframe>
         </div>
       ) : (

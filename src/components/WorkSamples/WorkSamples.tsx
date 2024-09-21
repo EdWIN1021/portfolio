@@ -53,7 +53,7 @@ const projects = [
     iconSrc: "unreal.png",
     description:
       "This game is an action-packed RPG inspired by Journey to the West, a classical Chinese mythological tale. Players take on the role of a legendary warrior, embarking on a quest through mystical lands, battling demons and mythical creatures using fast-paced, skill-based combat mechanics.",
-    to: "/work-samples/shadow-knight",
+    to: "/work-samples/legend-of-wukong",
   },
 ];
 

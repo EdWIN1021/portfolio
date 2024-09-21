@@ -183,6 +183,13 @@ const data = [
     name: "shadow-knight",
     details: [
       {
+        id: 0,
+        title: "Demo",
+        description: "",
+        imgSrc:
+          "https://www.youtube.com/embed/IODp9EFxwwI?mute=1&loop=1&controls=1&cc_load_policy=0&rel=0&vq=hd1080",
+      },
+      {
         id: 1,
         title: "Level-1",
         description: "",
@@ -206,6 +213,13 @@ const data = [
     id: 5,
     name: "legend-of-wukong",
     details: [
+      {
+        id: 0,
+        title: "Demo",
+        description: "",
+        imgSrc:
+          "https://www.youtube.com/embed/s4Hz_S2dqcE?si=hYQvmz1vunPs9SpM?mute=1&loop=1&controls=1&cc_load_policy=0&rel=0&vq=hd1080",
+      },
       {
         id: 1,
         title: "Lock on",
@@ -238,3 +252,5 @@ export const useDetails = (projectId: string) => {
 
   return { details };
 };
+
+

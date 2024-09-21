@@ -1,12 +1,18 @@
 import React from "react";
 
 import { Button } from "./ui/button";
+import { scroller } from "react-scroll";
 
 interface TableOfContentProps {
-  titles: string[];
+  details: {
+    id: number;
+    title: string;
+    description: string;
+    imgSrc: string;
+  }[];
 }
 
-const TableOfContent: React.FC<TableOfContentProps> = ({ titles }) => {
+const TableOfContent: React.FC<TableOfContentProps> = ({ details }) => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -15,13 +21,19 @@ const TableOfContent: React.FC<TableOfContentProps> = ({ titles }) => {
   return (
     <div className="fixed hidden xl:block">
       <div className="flex flex-col">
-        {titles.map((title: string) => (
+        {details.map((detail) => (
           <Button
-            key={title}
+            key={detail?.title}
             variant="ghost"
-            onClick={() => scrollToSection(title)}
+            onClick={() => {
+              scroller.scrollTo(detail?.title, {
+                duration: 800,
+                smooth: true,
+                offset: -100,
+              });
+            }}
           >
-            {title}
+            {detail?.title}
           </Button>
         ))}
       </div>

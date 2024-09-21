@@ -42,7 +42,7 @@ const projects = [
     imgSrc: "sk/preview.png",
     iconSrc: "unreal.png",
     description:
-      " Shadow Knight is a fast-paced 2D platformer where players navigate through dark, atmospheric levels filled with enemies. The game follows the journey of a shadow warrior who fights against evil creatures.",
+      " Shadow Knight is a fast-paced 2D platform where players navigate through dark, atmospheric levels filled with enemies. The game follows the journey of a shadow warrior who fights against evil creatures.",
     to: "/work-samples/shadow-knight",
   },
   {
@@ -77,13 +77,12 @@ const WorkSamples = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              padding: "5px",
             }}
-            icon={
-              <img className="w-12 h-12 rounded-full" src={project.iconSrc} />
-            }
+            icon={<img className="rounded-full" src={project.iconSrc} />}
           >
             <div>
-              <div>
+              <div className="py-5">
                 <img src={project?.imgSrc} alt="..." />
               </div>
 

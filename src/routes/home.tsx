@@ -11,11 +11,6 @@ const HomePage = () => {
       exit={{ opacity: 1 }}
     >
       <Banner />
-
-      {/* <div>
-        <Button>Click me</Button>
-        <ModeToggle />
-      </div> */}
     </motion.div>
   );
 };

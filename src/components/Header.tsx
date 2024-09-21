@@ -1,7 +1,6 @@
 import ScrollToElement from "./ScrollToElement";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
-import { ModeToggle } from "./mode-toggle";
 import Drawer from "./drawer";
 
 const links = ["Home", "Work Samples", "Skills", "Educations", "Contact"];

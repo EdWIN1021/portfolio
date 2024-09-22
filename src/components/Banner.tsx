@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Container from "./Container";
-import IconButton from "./IconButton";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 
 interface BannerProps {

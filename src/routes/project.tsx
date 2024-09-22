@@ -12,10 +12,10 @@ const Project = () => {
       <ProjectDetails details={details} />
 
       <div
-        className="fixed right-20 bottom-20 border-2 p-1 rounded-full cursor-pointer"
+        className="fixed right-20 bottom-20 border-2 p-1 rounded-full cursor-pointer bg-black"
         onClick={() => scroll.scrollToTop()}
       >
-        <img className="bg-black" src={"top.png"} width={25} height={25} />
+        <img className="" src={"top.png"} width={25} height={25} />
       </div>
     </>
   );

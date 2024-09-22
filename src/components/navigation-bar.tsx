@@ -57,7 +57,7 @@ export function NavigationBar() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Web Development</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {webComponents.map((component) => (
                   <ListItem
                     key={component.title}
@@ -74,7 +74,7 @@ export function NavigationBar() {
           <NavigationMenuItem>
             <NavigationMenuTrigger>Game Development</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              <ul className="grid w-[300px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {gameComponents.map((component) => (
                   <ListItem
                     key={component.title}

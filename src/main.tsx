@@ -6,12 +6,12 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Resume from "./routes/resume";
 import WorkSamplesPage from "./routes/work-samples";
 import SkillsPage from "./routes/skills";
-import EducationsPage from "./routes/educations";
-import ContactPage from "./routes/contact";
 import HomePage from "./routes/home";
 import { ThemeProvider } from "@/components/theme-provider";
 import RootLayout from "@/layouts/RootLayout";
 import Project from "./routes/project";
+import EducationsPage from "./routes/educations";
+import ContactPage from "./routes/contact";
 const router = createHashRouter([
   {
     path: "/",

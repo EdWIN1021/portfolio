@@ -10,6 +10,7 @@ const ProjectDetail: React.FC<DetailProps> = ({ detail }) => {
       </h2>
 
       <p className="my-5">{detail?.description}</p>
+
       {detail?.imgSrc && (
         <>
           {detail.imgSrc.includes("youtube") ? (

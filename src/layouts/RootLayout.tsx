@@ -8,6 +8,7 @@ const RootLayout = () => {
       <div className="max-w-screen-2xl mx-auto">
         <div className="px-10">
           <Header />
+
           <div className="mt-10">
             <Outlet />
           </div>

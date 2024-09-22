@@ -70,10 +70,10 @@ const Banner: React.FC<BannerProps> = ({ className }) => {
             <span>Canada</span>
           </div>
 
-          <IconButton
+          {/* <IconButton
             url={"https://www.linkedin.com/in/yang-shi-2781b015b/"}
             title={"linkedin"}
-          />
+          /> */}
         </div>
       </div>
     </Container>

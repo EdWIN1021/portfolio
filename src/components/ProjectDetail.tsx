@@ -27,7 +27,7 @@ const ProjectDetail: React.FC<DetailProps> = ({ detail }) => {
         <div>
           <img
             src={detail?.imgSrc}
-            alt={detail?.description || "Project image"} // Improved alt text
+            alt={detail?.description || "Project image"}
           />
         </div>
       )}

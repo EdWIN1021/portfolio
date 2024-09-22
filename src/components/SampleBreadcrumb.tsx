@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
-import { ChevronDownIcon, SlashIcon } from "@radix-ui/react-icons";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { SlashIcon, ChevronDownIcon } from "@radix-ui/react-icons";
 
 import {
   Breadcrumb,
@@ -18,84 +18,67 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const SampleBreadcrumb = () => {
-  const location = useLocation();
-  const pathName = location.pathname;
-
-  const formatPathname = () => {
-    const lastRouteName = pathName.split("/")[pathName.split("/").length - 1];
-
-    return lastRouteName
-      .split("-")
-      .map(
-        (word: string) =>
-          word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-      )
-      .join(" ");
-  };
+  const navigate = useNavigate();
+  const params = useParams();
 
   return (
-    <div className="flex flex-col items-center">
-      <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1">
-                Work Samples
-                <ChevronDownIcon />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
-                <DropdownMenuItem>
-                  <BreadcrumbLink asChild>
-                    <Link
-                      className="w-full"
-                      to={"/work-samples/library-management-system"}
-                    >
-                      Library Management System
-                    </Link>
-                  </BreadcrumbLink>
-                </DropdownMenuItem>
+    <Breadcrumb className="flex justify-center">
+      <BreadcrumbList>
+        <BreadcrumbItem>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1">
+              Projects
+              <ChevronDownIcon className="h-4 w-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start">
+              <DropdownMenuItem
+                onClick={() =>
+                  navigate("/work-samples/library-management-system")
+                }
+              >
+                Library Management System
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => navigate("/work-samples/twitter-clone")}
+              >
+                Twitter Clone
+              </DropdownMenuItem>
 
-                <DropdownMenuItem>
-                  <BreadcrumbLink asChild>
-                    <Link className="w-full" to={"/work-samples/twitter-clone"}>
-                      Twitter Clone
-                    </Link>
-                  </BreadcrumbLink>
-                </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() =>
+                  navigate("/work-samples/real-time-chat-application")
+                }
+              >
+                Real-time Chat Application
+              </DropdownMenuItem>
 
-                <DropdownMenuItem>
-                  <BreadcrumbLink asChild>
-                    <Link className="w-full" to={"/work-samples/twitter-clone"}>
-                      Realtime Chat App
-                    </Link>
-                  </BreadcrumbLink>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <BreadcrumbLink asChild>
-                    <Link className="w-full" to={"/work-samples/twitter-clone"}>
-                      Game1
-                    </Link>
-                  </BreadcrumbLink>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <BreadcrumbLink asChild>
-                    <Link className="w-full" to={"/work-samples/twitter-clone"}>
-                      Game2
-                    </Link>
-                  </BreadcrumbLink>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator>
-            <SlashIcon />
-          </BreadcrumbSeparator>
-          <BreadcrumbItem>
-            <BreadcrumbPage>{formatPathname()}</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-    </div>
+              <DropdownMenuItem
+                onClick={() => navigate("/work-samples/shadow-knight")}
+              >
+                Shadow Knight
+              </DropdownMenuItem>
+
+              <DropdownMenuItem
+                onClick={() => navigate("/work-samples/legend-of-wukong")}
+              >
+                Legend of Wukong
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </BreadcrumbItem>
+        <BreadcrumbSeparator>
+          <SlashIcon />
+        </BreadcrumbSeparator>
+        <BreadcrumbItem>
+          <BreadcrumbPage className="w-[185px]">
+            {params.projectId
+              ?.split("-")
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(" ")}
+          </BreadcrumbPage>
+        </BreadcrumbItem>
+      </BreadcrumbList>
+    </Breadcrumb>
   );
 };
 

@@ -1,6 +1,6 @@
+import WorkSamples from "@/components/WorkSamples";
 import Container from "../components/Container";
 import Heading from "../components/Heading";
-import WorkSamples from "../components/WorkSamples/WorkSamples";
 
 const WorkSamplesPage = () => {
   return (

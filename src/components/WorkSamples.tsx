@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 const projects = [
   {
     id: 1,

@@ -15,7 +15,7 @@ const Project = () => {
         className="fixed right-20 bottom-20 border-2 p-1 rounded-full cursor-pointer"
         onClick={() => scroll.scrollToTop()}
       >
-        <img src={"top.png"} width={25} height={25} />
+        <img className="bg-black" src={"top.png"} width={25} height={25} />
       </div>
     </>
   );

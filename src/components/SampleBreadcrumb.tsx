@@ -21,7 +21,7 @@ const SampleBreadcrumb = () => {
   const params = useParams();
 
   return (
-    <Breadcrumb className="flex justify-center">
+    <Breadcrumb className="flex justify-center mb-5">
       <BreadcrumbList>
         <BreadcrumbItem>
           <DropdownMenu>

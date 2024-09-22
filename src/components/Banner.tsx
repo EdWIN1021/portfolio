@@ -49,11 +49,11 @@ const Banner: React.FC<BannerProps> = ({ className }) => {
           <TypewriterEffect words={words} />
         </h1>
 
-        <div className="text-[2vw] text-center my-5">
+        <div className="text-center my-5">
           Software Developer | Full Stack Developer | Front-end Developer
         </div>
 
-        <p className="max-w-5xl text-[1.5vw]">
+        <p className="max-w-5xl">
           &nbsp;&nbsp;Highly skilled developer with a robust background in
           computer science and extensive full stack development experience,
           including React, Nodejs, and SQL databases. Proven track record of

@@ -499,6 +499,23 @@ const data = [
         description: "",
         imgSrc: "low/boss.png",
       },
+      {
+        title: "Assets",
+        description: (
+          <>
+            <p>
+              All assets used in the game were sourced from the Epic
+              Marketplace.
+            </p>
+            <ul className="list-disc ml-10">
+              <li>Infinity Blade: Temple</li>
+              <li>Paragon: Wukong</li>
+              <li>Paragon: Rampage</li>
+              <li>Paragon: Khaimera</li>
+            </ul>
+          </>
+        ),
+      },
     ],
   },
 ];
